@@ -1,0 +1,13 @@
+body{margin:0;}
+html *{box-sizing: border-box;}
+.flex{display:flex;}
+.column{flex-direction:column;}
+.row{flex-direction:row;}
+html *::-webkit-scrollbar {
+	width:12px;
+	position: absolute;
+}
+html *::-webkit-scrollbar-thumb {
+	background-color: rgba(255,255,255,0.2);
+	border-radius: 100px;
+}
