@@ -1,7 +1,3 @@
-body{
-	width:100vw;
-	height:100vh;
-}
 #titlebar{
 	flex: 1 0 0;
 }
@@ -27,9 +23,23 @@ body{
 	width: 400%;
 	height: 100%;
 	position: relative;
-	transition: left 300ms;
+	transition: left 800ms;
 	left:0%;
 }
 .page{
 	flex: 1 0 0;
+	overflow-y: auto;
+}
+.leader{
+	height: 40vmin;
+}
+.headpic{
+	width: 40vmin; /*temporarily*/
+	flex:0 0 auto;
+}
+.leaderintro{
+	flex: 1 0 0;
+}
+#signup{
+	overflow-y: hidden
 }
