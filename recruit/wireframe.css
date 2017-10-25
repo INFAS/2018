@@ -1,8 +1,8 @@
 html *{
 	background-color: rgba(0,0,0,.05);
-	border: rgba(0,0,0,.2) solid 2px;
+	/*border: rgba(0,0,0,.2) solid 2px;*/
 }
 html *:hover{
 	background-color: rgba(255,255,0,.1);
-	border: rgba(0,0,0,1) solid 2px;
+	/*border: rgba(0,0,0,1) solid 2px;*/
 }

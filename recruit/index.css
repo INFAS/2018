@@ -13,23 +13,45 @@
 #navbar>.page-button{
 	flex: 1 0 0;
 	text-align: center;
-	padding: 10px;
+	margin: 10px;
+	border-radius: 10px;
+	background-color: #
+
 }
 #content{
 	flex: 3 0 0;
 	overflow-x: hidden;
+	background-color: #FF8;
 }
 #scroll-wrapper{
-	width: 400%;
+	width: 100%;
 	height: 100%;
 	position: relative;
 	transition: left 800ms;
 	left:0%;
 }
 .page{
-	flex: 1 0 0;
+	position: absolute;
+	top:0;
+	width:100%;
+	height: 100%;
 	overflow-y: auto;
+	padding: 10px 20px;
 }
+#teams{left:100%;}
+#leaders{left:200%;}
+#signup{left:300%;}
+/*INTRO*/
+#introhead{
+	text-align: center;
+}
+#introcontent{
+	font-size: 12pt;
+	width: 70%;
+	margin: auto auto;
+}
+
+
 .leader{
 	height: 40vmin;
 }
