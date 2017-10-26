@@ -23,17 +23,19 @@
 		<link href="index.css" rel="stylesheet"/>
 	</head>
 	<body class="flex column">
-		<div id="titlebar">
-			<div id="titlepic1" class="titlepic"></div>
-			<div id="titlepic2" class="titlepic"></div>
-			<div id="titlepic3" class="titlepic"></div>
-			<div id="logo"></div>
-		</div>
-		<div id="navbar" class="flex row">
-			<div class="page-button" onclick="flip(0)">INTRO</div>
-			<div class="page-button" onclick="flip(1)">TEAMS</div>
-			<div class="page-button" onclick="flip(2)">LEADERS</div>
-			<div class="page-button" onclick="flip(3)">SIGN UP</div>
+		<div id="titlebar" class="flex column">
+			<div id="logobar">
+				<div id="titlepic1" class="titlepic"></div>
+				<div id="titlepic2" class="titlepic"></div>
+				<div id="titlepic3" class="titlepic"></div>
+				<div id="logo"></div>
+			</div>
+			<div id="navbar" class="flex row">
+				<div class="page-button" onclick="flip(0)">INTRO</div>
+				<div class="page-button" onclick="flip(1)">TEAMS</div>
+				<div class="page-button" onclick="flip(2)">LEADERS</div>
+				<div class="page-button" onclick="flip(3)">SIGN UP</div>
+			</div>
 		</div>
 		<div id="content">
 			<div id="scroll-wrapper">
@@ -58,41 +60,104 @@
 					</div>
 				</div>
 
-				<div class="page" id="teams">I AM A PAGE</div>
+				<div class="page flex column wrap" id="teams">
+					<div id="venue" class="team flex column center">
+						<div class="title">場務</div>
+					</div>
+					<div id="agenda" class="team flex column center">
+						<div class="title">議程</div>
+					</div>
+					<div id="pr" class="team flex column center">
+						<div class="title">公關</div>
+					</div>
+					<div id="design" class="team flex column center">
+						<div class="title">文創</div>
+					</div>
+					<div id="record" class="team flex column center">
+						<div class="title">紀錄</div>
+					</div>
+					<div id="finance" class="team flex column center">
+						<div class="title">財務</div>
+					</div>
+				</div>
 
 				<div class="page" id="leaders">
-					<div class="leader flex row">
-						<div class="headpic"></div>
-						<div class="leaderintro"></div>
+					<div id="venue" class="leader flex row">
+						<div class="headpic"><div class="team">總召</div></div>
+						<div class="leaderintro">
+							<div class="name"><span></span></div>
+							<p>
+								LALALA
+							</p>
+						</div>
+						</div>
+						<div id="agenda" class="leader flex row-rev">
+						<div class="headpic"><div class="team">副召</div></div>
+						<div class="leaderintro">
+							<div class="name"><span></span></div>
+							<p>
+								LALALA
+							</p>
+						</div>
 					</div>
-					<div class="leader flex row-rev">
-						<div class="headpic"></div>
-						<div class="leaderintro"></div>
+					<div id="pr" class="leader flex row">
+						<div class="headpic"><div class="team">場務</div></div>
+						<div class="leaderintro">
+							<div class="name"><span></span></div>
+							<p>
+								LALALA
+							</p>
+						</div>
 					</div>
-					<div class="leader flex row">
-						<div class="headpic"></div>
-						<div class="leaderintro"></div>
+					<div id="design" class="leader flex row-rev">
+						<div class="headpic"><div class="team">議程</div></div>
+						<div class="leaderintro">
+							<div class="name"><span></span></div>
+							<p>
+								LALALA
+							</p>
+						</div>
 					</div>
-					<div class="leader flex row-rev">
-						<div class="headpic"></div>
-						<div class="leaderintro"></div>
+					<div id="finance" class="leader flex row">
+						<div class="headpic"><div class="team">公關</div></div>
+						<div class="leaderintro">
+							<div class="name"><span></span></div>
+							<p>
+								LALALA
+							</p>
+						</div>
 					</div>
-					<div class="leader flex row">
-						<div class="headpic"></div>
-						<div class="leaderintro"></div>
+					<div id="record" class="leader flex row-rev">
+						<div class="headpic"><div class="team">文創</div></div>
+						<div class="leaderintro">
+							<div class="name"><span></span></div>
+							<p>
+								LALALA
+							</p>
+						</div>
 					</div>
-					<div class="leader flex row-rev">
-						<div class="headpic"></div>
-						<div class="leaderintro"></div>
+					<div id="record" class="leader flex row">
+						<div class="headpic"><div class="team">紀錄</div></div>
+						<div class="leaderintro">
+							<div class="name"><span></span></div>
+							<p>
+								LALALA
+							</p>
+						</div>
 					</div>
-					<div class="leader flex row">
-						<div class="headpic"></div>
-						<div class="leaderintro"></div>
+					<div id="record" class="leader flex row-rev">
+						<div class="headpic"><div class="team">財務</div></div>
+						<div class="leaderintro">
+							<div class="name"><span></span></div>
+							<p>
+								LALALA
+							</p>
+						</div>
 					</div>
 				</div>
 
 				<div class="page" id="signup">
-					<!--iframe src="http://infas-js.com.tw/2017" frameborder="0" width="100%" height="100%"></iframe-->
+					<iframe src="http://infas-js.com.tw/2017" frameborder="0" width="100%" height="100%"></iframe>
 				</div>
 
 			</div>

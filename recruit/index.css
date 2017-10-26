@@ -1,10 +1,14 @@
+/*TITLEBAR*/
 #titlebar{
 	flex: 1 0 0;
 	position: relative;
 	transition: flex 300ms;
 }
-#titlebar:hover{
+/*#titlebar:hover{
 	flex: 3 0 0;
+}*/
+#logobar{
+	flex: 1 0 0;
 }
 #logo{
 	position: absolute;
@@ -30,8 +34,10 @@
 	background-size: cover;
 }
 
+/*NAVBAR*/
 #navbar{
 	flex: 0 0 auto;
+	z-index:10;
 }
 #navbar>.page-button{
 	flex: 1 0 0;
@@ -42,7 +48,7 @@
 
 }
 #content{
-	flex: 3 0 0;
+	flex: 2 0 0;
 	overflow-x: hidden;
 	background-color: #FFA;
 }
@@ -53,6 +59,8 @@
 	transition: left 800ms;
 	left:0%;
 }
+
+/*PAGES*/
 .page{
 	position: absolute;
 	top:0;
@@ -64,6 +72,7 @@
 #teams{left:100%;}
 #leaders{left:200%;}
 #signup{left:300%;}
+
 /*INTRO*/
 #introhead{
 	text-align: center;
@@ -74,17 +83,40 @@
 	margin: auto auto;
 }
 
+/*TEAM*/
+#teams>*{
+	width:calc(100% / 3);
+	flex: 0 0 50%;
+}
 
+/*LEADERS*/
 .leader{
 	height: 40vmin;
 }
 .headpic{
 	width: 40vmin; /*temporarily*/
 	flex:0 0 auto;
+	position: relative;
+	background-color: #840;
+}
+.headpic>.team{
+	position: absolute;
+	width: 100%;
+	bottom:10%;
+	text-align: center;
+	color:#FFF;
+	text-shadow: black 0 0 15px;
 }
 .leaderintro{
 	flex: 1 0 0;
+	padding: 0 20px;
 }
+
+
+
+/*SIGNUP*/
 #signup{
-	overflow-y: hidden
+	overflow: hidden;
+	height: 100%;
+	padding: 0;
 }
