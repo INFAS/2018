@@ -50,7 +50,6 @@
 #content{
 	flex: 2 0 0;
 	overflow-x: hidden;
-	background-color: #FFA;
 }
 #scroll-wrapper{
 	width: 100%;
@@ -74,6 +73,9 @@
 #signup{left:300%;}
 
 /*INTRO*/
+#intro{
+	background-color: #FFA;
+}
 #introhead{
 	text-align: center;
 }
@@ -84,9 +86,26 @@
 }
 
 /*TEAM*/
+#teams{
+	overflow: hidden;
+	background-color: #FCA;
+}
 #teams>*{
 	width:calc(100% / 3);
 	flex: 0 0 50%;
+	padding: 20px;
+	transition: padding 300ms;
+}
+#teams>*:hover{
+	padding: 5px;
+}
+#teams>*>.wrapper{
+	height:100%;
+	background-color: rgba(255,255,255,.8);
+	border-radius: 10px;
+}
+#teams .title{
+	font-size: 36pt;
 }
 
 /*LEADERS*/
@@ -109,7 +128,7 @@
 }
 .leaderintro{
 	flex: 1 0 0;
-	padding: 0 20px;
+	padding: 20px;
 }
 
 
