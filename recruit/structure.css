@@ -9,6 +9,10 @@ body{
 	font-family: sans-serif;
 	position:relative;
 }
+p{
+	-webkit-margin-before: .5em;
+    -webkit-margin-after: .5em;
+}
 .flex{
 	display:flex;
 }

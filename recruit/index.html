@@ -31,10 +31,10 @@
 				<div id="logo"></div>
 			</div>
 			<div id="navbar" class="flex row">
-				<div class="page-button" onclick="flip(0)">INTRO</div>
-				<div class="page-button" onclick="flip(1)">TEAMS</div>
-				<div class="page-button" onclick="flip(2)">LEADERS</div>
-				<div class="page-button" onclick="flip(3)">SIGN UP</div>
+				<div id="intro-button" class="page-button">社群<br>簡介</div>
+				<div id="teams-button" class="page-button">組別<br>一覽</div>
+				<div id="leaders-button" class="page-button">幹部<br>介紹</div>
+				<div id="signup-button" class="page-button">我要<br>報名</div>
 			</div>
 		</div>
 		<div id="content">
@@ -60,25 +60,92 @@
 					</div>
 				</div>
 
-				<div class="page flex column wrap" id="teams">
-					<div id="venue" class="team"><div class="wrapper flex column center">
-						<div class="title">場務</div>
-					</div></div>
-					<div id="agenda" class="team"><div class="wrapper flex column center">
-						<div class="title">議程</div>
-					</div></div>
-					<div id="pr" class="team"><div class="wrapper flex column center">
-						<div class="title">公關</div>
-					</div></div>
-					<div id="design" class="team"><div class="wrapper flex column center">
-						<div class="title">文創</div>
-					</div></div>
-					<div id="record" class="team"><div class="wrapper flex column center">
-						<div class="title">紀錄</div>
-					</div></div>
-					<div id="finance" class="team"><div class="wrapper flex column center">
-						<div class="title">財務</div>
-					</div></div>
+				<div class="page" id="teams">
+					<div class="wrapper flex column wrap">
+						<div id="venue" class="team"><div class="wrapper flex column center">
+							<div class="title">場務</div>
+						</div></div>
+						<div id="agenda" class="team"><div class="wrapper flex column center">
+							<div class="title">議程</div>
+						</div></div>
+						<div id="pr" class="team"><div class="wrapper flex column center">
+							<div class="title">公關</div>
+						</div></div>
+						<div id="design" class="team"><div class="wrapper flex column center">
+							<div class="title">文創</div>
+						</div></div>
+						<div id="record" class="team"><div class="wrapper flex column center">
+							<div class="title">紀錄</div>
+						</div></div>
+						<div id="finance" class="team"><div class="wrapper flex column center">
+							<div class="title">財務</div>
+						</div></div>
+					</div>
+					<div id="venue-des" class="des">
+						<p class="title">場務</p>
+						<p>場務組將負責與場地有關的大小事務，包含：</p>
+						<ul>
+							<li>場勘、設備：勘查即將舉辦活動之場地，並回報可用環境及設備器材。</li>
+							<li>交通、動線：安排場內外動線規劃以及交通資訊。</li>
+							<li>午餐、午茶：安排食物之訂購、擺放和收拾。</li>
+							<li>機動：活動當日負責站點，並臨機處理大小事。</li>
+							<li>開會地點：負責安排下次適當的會議地點並申請場地。</li>
+						</ul>
+						<p>場務組所需要的專業技能相對較少，但事項較多，人數需求也最大。活動當天希望大家都能來支援，不過不能來也沒關係，場務組也有許多事前工作需要幫忙呦！場務組歡迎大家來加入啦～～～</p>
+					</div>
+					<div id="agenda-des" class="des">
+						<p class="title">議程</p>
+						<p>議程組將規劃當天活動的進行，包含：</p>
+						<ul>
+							<li>流程安排：排定活動當日之詳細流程與活動。</li>
+							<li>徵稿審稿：徵選講師講稿，並對其進行審核。</li>
+							<li>報名報到：處理報名事宜，並統計報名人資訊及當日報到情況。</li>
+						</ul>
+						<p>議程組需要一些有資訊能力的人來對稿件進行審核，在議程及活動安排較能如魚得水。歡迎有資訊程度或善於安排行程的人加入議程組！</p>
+					</div>
+					<div id="pr-des" class="des">
+						<p class="title">公關</p>
+						<p>想要增廣人脈、拓展視野的你們，加入公關組會是最好的選擇！公關組的工作包含：</p>
+						<ul>
+							<li>宣傳：發送公關函、宣傳品，以及增加全國中學生對INFAS的認知。</li>
+							<li>粉專：管理粉絲專頁，負責處理訊息、決定發布動態的內容與時間。</li>
+							<li>拉贊：尋找願意贊助的廠商、學校等等。</li>
+						</ul>
+						<p>歡迎喜歡講話、宣傳、交朋友的你們加入公關組的行列啦！！！</p>
+					</div>
+					<div id="design-des" class="des">
+						<p class="title">文創</p>
+						<p>文創組負責美工設計與排版的部分，包含：</p>
+						<ul>
+							<li>年會手冊：年會當日每位會眾都會領取一本活動手冊，內含活動、議程內容介紹，交通資訊及贊助商廣告等等。</li>
+							<li>看板布條：場地需要醒目的大型看板、布條及立牌等等。</li>
+							<li>LOGO：設計年會吉祥物及標識，或者選擇沿用。</li>
+							<li>官方網站：設計活動官網。</li>
+							<li>宣傳品：廣告單、海報、粉專貼文、紀念衣物與布偶等設計。</li>
+						</ul>
+						<p>文創組需要一些對設計較有經驗、專業人才(不限定是否具有資訊能力)，因此請務必在招募表單上填寫相關的經驗，尤其在Adobe系列軟體的處理經驗，我們會特別針對這組的報名人做審核：）希望有設計能力的你們可以來支援我們！</p>
+					</div>
+					<div id="record-des" class="des">
+						<p class="title">紀錄</p>
+						<p>對各種東西進行紀錄，包含：</p>
+						<ul>
+							<li>會議紀錄：負責整理所有會議紀錄，並於會議時打逐字稿或錄音等等。</li>
+							<li>攝影錄影：在每次各組聚集、召開會議時拍下我們的日常，並在年會當日拍照錄影。</li>
+							<li>新聞稿：撰寫新聞稿並發送至各大新聞報社。</li>
+						</ul>
+						<p>紀錄組希望是有較專業的相機，不過沒有也沒關係，若你喜歡拿傻瓜相機或手機拍照，也非常歡迎你的加入哦！或者是想寫出讓全台灣為之一亮的新聞稿，也可以來紀錄組呦～～</p>
+					</div>
+					<div id="finance-des" class="des">
+						<p class="title">財務</p>
+						<p>就是管錢、審錢、監控錢啦！包含：</p>
+						<ul>
+							<li>與各組確認、編列預算。</li>
+							<li>與公關組確認拉贊情形，是否需要需求補助等等。</li>
+							<li>負責管理金流帳號。</li>
+							<li>負責處理各組報帳，並監控是否超出預算。</li>
+						</ul>
+						<p>財務組不開放報名。</p>
+					</div>
 				</div>
 
 				<div class="page" id="leaders">
@@ -157,7 +224,7 @@
 				</div>
 
 				<div class="page" id="signup">
-					<iframe src="http://infas-js.com.tw/2017" frameborder="0" width="100%" height="100%"></iframe>
+					<iframe src="http://goo.gl/forms/OLn787XN8AtWdDuF2" frameborder="0" width="100%" height="100%"></iframe>
 				</div>
 
 			</div>

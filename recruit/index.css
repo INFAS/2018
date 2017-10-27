@@ -36,6 +36,9 @@
 
 /*NAVBAR*/
 #navbar{
+	position: absolute;
+	right:30px;
+	bottom:10px;
 	flex: 0 0 auto;
 	z-index:10;
 }
@@ -43,9 +46,18 @@
 	flex: 1 0 0;
 	text-align: center;
 	margin: 10px;
-	border-radius: 10px;
-	background-color: #ACF
-
+	padding:0.4em;
+	line-height: 1.05em;
+	font-size: 16pt;
+	border-radius: 50%;
+	transition: all 300ms;
+}
+#intro,#intro-button{background-color: #FFA;}
+#teams,#teams-button{background-color: #FCA;}
+#leaders,#leaders-button{background-color: #CFA;}
+#signup-button{background-color: #AFC;}
+#navbar>.page-button:hover{
+	transform: scale(1.2);
 }
 #content{
 	flex: 2 0 0;
@@ -73,9 +85,6 @@
 #signup{left:300%;}
 
 /*INTRO*/
-#intro{
-	background-color: #FFA;
-}
 #introhead{
 	text-align: center;
 }
@@ -86,26 +95,45 @@
 }
 
 /*TEAM*/
-#teams{
+#teams>.wrapper{
+	width:100%;
+	height: 100%;
+	position: relative;
 	overflow: hidden;
-	background-color: #FCA;
+	transition: all 300ms;
+	backface-visibility: hidden;
+	filter: blur(0);
 }
-#teams>*{
+#teams .team{
 	width:calc(100% / 3);
 	flex: 0 0 50%;
 	padding: 20px;
 	transition: padding 300ms;
 }
-#teams>*:hover{
+#teams .team:hover{
 	padding: 5px;
 }
-#teams>*>.wrapper{
+#teams .team>.wrapper{
 	height:100%;
 	background-color: rgba(255,255,255,.8);
 	border-radius: 10px;
+	transition: background-color 300ms;
 }
 #teams .title{
 	font-size: 36pt;
+}
+#teams .des{
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	padding: 0 15%;
+	font-size: 12pt;
+	opacity: 0;
+	overflow-y: auto;
+	z-index:-10;
+	transition: all 300ms;
 }
 
 /*LEADERS*/
