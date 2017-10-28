@@ -70,6 +70,8 @@ body{
 	color: #eaeaea;
 }
 .pagetitle{
+	margin-top: 50px;
+	margin-bottom: 20px;
 	font-size: 36pt;
 	text-align: center;
 	font-weight: bold;
