@@ -87,9 +87,9 @@
 /*INTRO*/
 #introhead{
 	text-align: center;
+	font-size: 18pt;
 }
 #introcontent{
-	font-size: 12pt;
 	width: 70%;
 	margin: auto auto;
 }
@@ -138,28 +138,58 @@
 
 /*LEADERS*/
 .leader{
-	height: 40vmin;
+	margin: 10px 0;
+}
+.leader.row-rev{
+	text-align: right;
 }
 .headpic{
-	width: 40vmin; /*temporarily*/
+	height: 30vmin;
+	width: 30vmin; /*temporarily*/
 	flex:0 0 auto;
 	position: relative;
-	background-color: #840;
+	background-color: #040;
+	background-size: cover;
+	background-position: center;
 }
 .headpic>.team{
 	position: absolute;
 	width: 100%;
 	bottom:10%;
+	padding: 5px;
 	text-align: center;
 	color:#FFF;
-	text-shadow: black 0 0 15px;
+	font-size: 16pt;
+	background-color: rgba(0,0,0,.7);
 }
 .leaderintro{
 	flex: 1 0 0;
-	padding: 20px;
+	padding: 0 20px;
 }
-
-
+.leaderintro>.name{
+	font-size: 24pt;
+}
+#main-leader>.headpic{
+	background-image: url(https://scontent-nrt1-1.xx.fbcdn.net/v/t1.0-9/15727277_1828300477388588_6060767802767923386_n.jpg?oh=fda12da0dea605b92a1e87e0e76aac46&oe=5AAA8813);
+}
+#vice-leader>.headpic{
+	background-image: url(https://scontent-nrt1-1.xx.fbcdn.net/v/t1.0-9/15032284_1727139224276981_7827643744299918_n.jpg?oh=f61a8e882c9d784ddbec17c8fb3fb231&oe=5A630E50);
+}
+#venue-leader>.headpic{
+	background-image: url(https://scontent-nrt1-1.xx.fbcdn.net/v/t1.0-9/20708027_1258807847581677_5614288886892399204_n.jpg?oh=a1e5f1b5a0e1bb9aaf69cb6df6b56005&oe=5A620043);
+}
+#agenda-leader>.headpic{
+	background-image: url(https://scontent-nrt1-1.xx.fbcdn.net/v/t1.0-9/19553973_1043777015757391_8177644819316054020_n.jpg?oh=58b308d23ebde886ebdfb004cc8126aa&oe=5AAA8F26);
+}
+#pr-leader>.headpic{
+	background-image: url(https://scontent-nrt1-1.xx.fbcdn.net/v/t1.0-9/12813912_916792865101148_4412410349001668947_n.jpg?oh=00476c015275593dd90fca3af4ae8bb7&oe=5A79CEDD);
+}
+#record-leader>.headpic{
+	background-image: url(https://scontent-nrt1-1.xx.fbcdn.net/v/t31.0-1/c0.0.1370.1370/21728739_136289950322253_294758793819393330_o.jpg?oh=f7a3022248130c152bcd7abb4bbbdc79&oe=5A7329B8);
+}
+#finance-leader>.headpic{
+	background-image: url(https://scontent-nrt1-1.xx.fbcdn.net/v/t1.0-9/21034460_678222775716320_7423974169486544294_n.jpg?oh=bd379bae5630bb3e4c23ad99fa114153&oe=5A77ACA4);
+}
 
 /*SIGNUP*/
 #signup{
