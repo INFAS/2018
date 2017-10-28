@@ -161,7 +161,7 @@ body{
 	background-size: cover;
 	background-position: center;
 }
-.headpic>.team{
+.headpic>.team_lable{
 	position: absolute;
 	width: 100%;
 	bottom:10%;
@@ -202,11 +202,25 @@ body{
 
 #signup{
 	height: 100vh;
+	position:relative;
 }
 #signup>iframe{
 	width:100%;
 	flex:1 0 0;
+	z-index: 50;
 }
+#iframe-curtain{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	top: 0; 
+	left: 0;
+	right: 0;
+	bottom: 0;
+	position: absolute;
+	z-index: 100;
+}
+
 @media (max-width: 992px) {
 	.swal2-modal{
 		width: 90% !important;

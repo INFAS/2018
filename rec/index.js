@@ -24,11 +24,17 @@ $('.page-button').forEach((e,i,a)=>{
 
 $(function(){
 	$('.team').on('click', function(){
-		console.log($(this));
 		swal({
 		  	html: $(this).find('.des').html(),
 		  	width: '70%',
 		  	padding: '50'
 		})
-	})
+	});
+	$(window).on('scroll', function() {
+	   	if($(window).scrollTop() + $(window).height() == $(document).height()) {
+	    	$('#iframe-curtain').hide();
+	   	}else{
+	   		$('#iframe-curtain').show();
+	   	}
+	});
 })
