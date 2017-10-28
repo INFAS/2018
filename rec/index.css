@@ -1,5 +1,5 @@
 body{
-	background-color: /*#62A2BA*/#ACF;
+	background-color: rgb(242, 242, 242);
 }
 
 #navbar{
@@ -53,6 +53,8 @@ body{
 	top:10vmin;
 	left:10vmin;
 	font-size: 40pt;
+	line-height: 60pt;
+	color:#191919;
 }
 #title>img{
 	width: 40%;
@@ -63,7 +65,7 @@ body{
 	right:10vmin;
 	text-align: right;
 	font-size: 40pt;
-	color:white;
+	color: #eaeaea;
 }
 .pagetitle{
 	font-size: 36pt;
