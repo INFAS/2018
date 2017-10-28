@@ -1,0 +1,52 @@
+html *{
+	box-sizing: border-box;
+}
+body{
+	margin:0;
+	width:100vw;
+	font-size: 12pt;
+	font-family: sans-serif;
+	position:relative;
+	overflow-x: hidden;
+}
+p{
+	-webkit-margin-before: .5em;
+    -webkit-margin-after: .5em;
+}
+.flex{
+	display:flex;
+}
+.iflex{
+	display: inline-flex;
+}
+.wrap{
+	flex-wrap: wrap;
+}
+.column{
+	flex-direction:column;
+}
+.row{
+	flex-direction:row;
+}
+.row-rev{
+	flex-direction:row-reverse;
+}
+.fullscreen{
+	position: fixed;
+	top:0;
+	left:0;
+	height:100vh;
+	width:100vw;
+}
+.center{
+	align-items: center;
+	justify-content: center;
+}
+
+*::-webkit-scrollbar {
+	width:8px;
+}
+*::-webkit-scrollbar-thumb {
+	background-color: rgba(0,0,0,0.2);
+	border-radius: 100px;
+}
