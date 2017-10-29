@@ -4,28 +4,6 @@ body{
 	font-family: 'Noto Sans TC', sans-serif;
 }
 
-#navbar{
-	position: fixed;
-	right:30px;
-	bottom:10px;
-	flex: 0 0 auto;
-	z-index:10;
-}
-#navbar>.page-button{
-	flex: 1 0 0;
-	text-align: center;
-	margin: 10px;
-	padding:0.4em;
-	background-color: #F8A13A;
-	line-height: 1.05em;
-	font-size: 16pt;
-	border-radius: 50%;
-	transition: all 300ms;
-}
-#navbar>.page-button:hover{
-	transform: scale(1.2);
-}
-
 #titlebar{
 	position: relative;
 	height: 100vh;
@@ -34,10 +12,13 @@ body{
 #titlebg{
 	position: absolute;
 	width: 100%;
+	height:100vh;
 }
 #left{
 	border-top: 100vh solid #F8A13A;
 	border-right: 50vw solid transparent;
+	border-bottom:none;
+	border-left:none;
 	height: 0;
 	width: 80%;
 }
@@ -45,6 +26,8 @@ body{
 	position: absolute;
 	right: 0;
 	top:0;
+	border-top:none;
+	border-right:none;
 	border-bottom: 100vh solid #49514D;
 	border-left: 50vw solid transparent;
 	height: 0;
@@ -55,11 +38,13 @@ body{
 	top:10vmin;
 	left:10vmin;
 	font-size: 32pt;
-	line-height: 60pt;
+	line-height: 56pt;
 	color:#191919;
 }
 #title>img{
-	width: 32%;
+	width: 36vw;
+	max-width: 320px;
+	min-width: 160px;
 }
 #subtitle{
 	position: absolute;
@@ -67,6 +52,7 @@ body{
 	right:10vmin;
 	text-align: right;
 	font-size: 32pt;
+	line-height: 56pt;
 	color: #EAEAEA;
 }
 #subtitle>a{
@@ -81,13 +67,6 @@ body{
 	font-weight: bold;
 }
 
-#intro{
-
-}
-#introhead{
-	text-align: center;
-	font-size: 18pt;
-}
 #introcontent{
 	align-items:top;
 	width: 60%;
@@ -180,27 +159,28 @@ body{
 .leaderintro>.name{
 	font-size: 24pt;
 	line-height: 1em;
+	margin-bottom: 0.5em;
 }
 #main-leader>.headpic{
 	background-image: url(https://scontent-nrt1-1.xx.fbcdn.net/v/t1.0-9/15727277_1828300477388588_6060767802767923386_n.jpg?oh=fda12da0dea605b92a1e87e0e76aac46&oe=5AAA8813);
 }
 #vice-leader>.headpic{
-	background-image: url(https://scontent-nrt1-1.xx.fbcdn.net/v/t1.0-9/15032284_1727139224276981_7827643744299918_n.jpg?oh=f61a8e882c9d784ddbec17c8fb3fb231&oe=5A630E50);
+	background-image: url(vice_headpic.jpg);
 }
 #venue-leader>.headpic{
-	background-image: url(https://scontent-nrt1-1.xx.fbcdn.net/v/t1.0-9/20708027_1258807847581677_5614288886892399204_n.jpg?oh=a1e5f1b5a0e1bb9aaf69cb6df6b56005&oe=5A620043);
+	background-image: url(venue_headpic.jpg);
 }
 #agenda-leader>.headpic{
 	background-image: url(https://scontent-nrt1-1.xx.fbcdn.net/v/t1.0-9/19553973_1043777015757391_8177644819316054020_n.jpg?oh=58b308d23ebde886ebdfb004cc8126aa&oe=5AAA8F26);
 }
 #pr-leader>.headpic{
-	background-image: url(https://scontent-nrt1-1.xx.fbcdn.net/v/t1.0-9/12813912_916792865101148_4412410349001668947_n.jpg?oh=00476c015275593dd90fca3af4ae8bb7&oe=5A79CEDD);
+	background-image: url(pr_headpic.jpg);
 }
 #record-leader>.headpic{
-	background-image: url(https://scontent-nrt1-1.xx.fbcdn.net/v/t31.0-1/c0.0.1370.1370/21728739_136289950322253_294758793819393330_o.jpg?oh=f7a3022248130c152bcd7abb4bbbdc79&oe=5A7329B8);
+	background-image: url(record_headpic.jpg);
 }
 #finance-leader>.headpic{
-	background-image: url(https://scontent-nrt1-1.xx.fbcdn.net/v/t1.0-9/21034460_678222775716320_7423974169486544294_n.jpg?oh=bd379bae5630bb3e4c23ad99fa114153&oe=5A77ACA4);
+	background-image: url(finance_headpic.jpg);
 }
 
 #signup{
@@ -235,15 +215,85 @@ body{
 #introcontent,.teams,#leaders{
 	width: 80%;
 }
-.swal2-modal p,.swal2-modal ul{
+.swal2-modal{
 	width: 90% !important;
 	height: 90% !important;
-	border-radius: 0;
+	padding: 20px !important;
+	border-radius: 5px;
 }
 }
 
 @media (max-width: 640px){
 #introcontent,.teams,#leaders{
 	width: 90%;
+}
+#title,#subtitle{
+	font-size: 28pt;
+	line-height: 40pt;
+}
+}
+@media (max-width: 480px){
+#title,#subtitle{
+	font-size: 24pt;
+	line-height: 36pt;
+}
+.pagetitle{
+	font-size: 20pt;
+}
+#introslogan{
+	font-size: 14pt;
+}
+.teams .title{
+	font-size: 16pt;
+}
+.teams .team{
+	margin:10px;
+}
+.leader .team_lable{
+	font-size: 12pt;
+	line-height: 1em;	
+}
+.leaderintro>.name{
+	font-size: 16pt;
+}
+}
+@media(orientation: portrait){
+#left{
+	border-top:none;
+	border-right:none;
+	border-left: 100vw solid #F8A13A;
+	border-bottom: 50vh solid transparent;
+	width: 0;
+	height: 80vh;
+}
+#right{
+	top:25%;
+	right:0;
+	border-right: 100vw solid #49514D;
+	border-top: 50vh solid transparent;
+	border-bottom:none;
+	border-left:none;
+	width: 0;
+	height: 75vh;
+}
+.leader{
+	flex-direction: column;
+}
+.leaderintro{
+	padding: 0;
+	position: relative;
+}
+.leader.row .name{
+	position: absolute;
+	top: -1em;
+	left:32vmin;
+}
+.leader.row-rev .name{
+	position: absolute;
+	top: -1.1em;
+	right: 32vmin;
+}
+.leader.row-rev>.headpic{
+	align-self: flex-end;
 }
 }
