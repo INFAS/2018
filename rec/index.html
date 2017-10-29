@@ -6,18 +6,15 @@
 		<title>INFAS 全國中學生資訊年會 2018 招募</title>
 		<!--link href="wireframe.css" rel="stylesheet"/-->
 		<link href="structure.css" rel="stylesheet"/>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.11.1/sweetalert2.min.css"/>
+		<link href="loading.css" rel="stylesheet"/>
 		<link href="index.css" rel="stylesheet"/>
-		<!--link href="loading.css" rel="stylesheet"/-->
-		<!--meta property="og:image" content=""></meta-->
+		<link rel="stylesheet" href="sweetalert2.min.css"/>
+		<script src="sweetalert2.min.js"></script>
 		<!--meta property="og:image" content=""></meta-->
 		<meta property="og:type" content="website"></meta>
 		<meta property="og:description" content="INFAS 全國中學生資訊年會 2018 招募"></meta>
 		<meta property="og:url" content="http://infas.club"></meta>
 		<meta property="og:site_name" content="INFAS 2018 Recruit"></meta>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.11.1/sweetalert2.min.js"></script>
-		<script src="index.js"></script>
 		<!--link rel="shorcut icon" href=	"favicon.png"-->
 		<!--link rel="icon" type="image/png" href="favicon.png" sizes="256x256"-->
 		<!--link rel="icon" type="image/png" href="favicon152.png" sizes="152x152"-->
@@ -27,6 +24,10 @@
 		<!--link href="favicon76.png" rel="apple-touch-icon" sizes="76x76"-->
 	</head>
 	<body class="flex column">
+		<div id="loadpage" class="flex column center">
+			<span>L O A D I N G . . .</span>
+			<div class="left"></div><div class="right"></div>
+		</div>
 		<div id="titlebar">
 			<div id="titlebg"><div id="left"></div><div id="right"></div></div>
 			<div id="title"><img src="logo.png" draggable="false"><br>全國中學生<br>資訊年會</div>
@@ -155,18 +156,14 @@
 				<div class="headpic"><div class="team_lable">場務</div></div>
 				<div class="leaderintro">
 					<div class="name"><span>韋鈞</span></div>
-					<p>
-						LALALA
-					</p>
+					<p>這個人有點害羞不敢寫自介 QQ</p>
 				</div>
 			</div>
 			<div id="agenda-leader" class="leader flex row-rev">
 				<div class="headpic"><div class="team_lable">議程</div></div>
 				<div class="leaderintro">
 					<div class="name"><span>Lisa</span></div>
-					<p>
-						LALALA
-					</p>
+					<p>這個人有點害羞不敢寫自介 QQ</p>
 				</div>
 			</div>
 			<div id="pr-leader" class="leader flex row">
@@ -181,7 +178,7 @@
 				<div class="leaderintro">
 					<div class="name"><span>沒有人</span></div>
 					<p>
-						先承認你就是那個沒有人! OUO
+						先承認你就是那個沒有人! OUO<br>文創組需要你！！
 					</p>
 				</div>
 			</div>
@@ -190,20 +187,16 @@
 				<div class="leaderintro">
 					<div class="name"><span>宇芸</span></div>
 					<p>紀錄組是什麼呢？就是負責用攝影機紀錄下整場聯展活動過程的一組！<br>
-					既然是要拍照，就不能不提一提實中第一屆攝影社的社長~<br>
-					但是她表示！她絕對沒有很專業ㄎㄎ，別用異樣眼光看她w<br>
-					但是她肯定是史上最貪玩的社長了，堪稱是終極旅行家🌏！<br>
-					她對於玩樂的喜愛不亞於她對生物的狂熱呢！<br>
-					記得某次暑假我們宇芸一口氣去了 4 個國家！！<br>
-					她喜歡旅拍　喜歡美美的風景　更喜歡旅途中遇到的人<br>
-					目前正在探索街拍＆人像的領域（但是現在呈現一種頗混而且進度頗少，宇芸加油XD）<br>
+					身為實中第一屆攝影社的社長，但是我強調！我絕對沒有很專業ㄎㄎ，別用異樣眼光看我w<br>
+					但是我肯定是史上最貪玩的社長了，堪稱是終極旅行家🌏！<br>
+					我對於玩樂的喜愛不亞於對生物的狂熱呢！<br>
 					這麼愛玩但處理事情卻一點也不馬虎，態度積極有責任感，哇有沒有覺得組長選對了呢(咦?)</p>
 					<p>看到這裡有沒有在腦海中浮現出一位拿著相機的文青形象呢~？<br>
 					那那那你可就大錯特錯了！<br>
-					宇芸可是位很愛笑很愛講話的瘋瘋癲癲大姐姐喔😁<br>
-					青春洋溢的她說可以用滿滿的熱情融化你的心<br>
-					用百分之一百萬和善的態度和你們聊（搭）天（訕）的～<br>
-					所以大家看到她可以靠近她，跟她聊天窩</p>
+					我可是位很愛笑很愛講話的瘋瘋癲癲大姐姐喔😁<br>
+					青春洋溢的我可以用滿滿的熱情融化你的心<br>
+					用百分之一百萬和善的態度和你們聊(搭)天(訕)的～<br>
+					所以大家看到我可以靠近我，找我聊天窩</p>
 				</div>
 			</div>
 			<div id="finance-leader" class="leader flex row-rev">
@@ -221,5 +214,6 @@
 		<div id="signup" class="flex column">
 			<a href="http://goo.gl/forms/OLn787XN8AtWdDuF2" class="pagetitle" target="blank">我要報名</a>
 		</div>
+		<script src="index.js"></script>
 	</body>
 </html>

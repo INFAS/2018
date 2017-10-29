@@ -2,6 +2,8 @@
 body{
 	background-color: rgb(242, 242, 242);
 	font-family: 'Noto Sans TC', sans-serif;
+	overflow-x: hidden;
+	overflow-y: hidden;
 }
 
 #titlebar{
@@ -11,27 +13,30 @@ body{
 }
 #titlebg{
 	position: absolute;
-	width: 100%;
-	height:100vh;
+	width: 100vw;
+	height: 100vh;
 }
 #left{
+	position: absolute;
+	left: 0;
+	top: 0;
 	border-top: 100vh solid #F8A13A;
 	border-right: 50vw solid transparent;
 	border-bottom:none;
 	border-left:none;
 	height: 0;
-	width: 80%;
+	width: 76vw;
 }
 #right{
 	position: absolute;
 	right: 0;
-	top:0;
+	bottom: 0;
 	border-top:none;
 	border-right:none;
 	border-bottom: 100vh solid #49514D;
 	border-left: 50vw solid transparent;
 	height: 0;
-	width: 75%;
+	width: 75vw;
 }
 #title{
 	position: absolute;
@@ -204,6 +209,11 @@ body{
 .swal2-modal li,.swal2-modal p{
 	text-align: left!important;
 }
+.swal2-modal{
+	width: 90% !important;
+	max-height: 90% !important;
+	padding: 20px !important;
+}
 
 @media (max-width: 1200px){
 #introcontent,.teams,#leaders{
@@ -214,12 +224,6 @@ body{
 @media (max-width: 992px){
 #introcontent,.teams,#leaders{
 	width: 80%;
-}
-.swal2-modal{
-	width: 90% !important;
-	height: 90% !important;
-	padding: 20px !important;
-	border-radius: 5px;
 }
 }
 
@@ -267,8 +271,6 @@ body{
 	height: 80vh;
 }
 #right{
-	top:25%;
-	right:0;
 	border-right: 100vw solid #49514D;
 	border-top: 50vh solid transparent;
 	border-bottom:none;
