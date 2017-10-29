@@ -3,11 +3,9 @@ html *{
 }
 body{
 	margin:0;
-	width:100vw;
 	font-size: 12pt;
 	font-family: sans-serif;
 	position:relative;
-	overflow-x: hidden;
 }
 a{
 	text-decoration: none;

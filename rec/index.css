@@ -1,4 +1,4 @@
-@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
 body{
 	background-color: rgb(242, 242, 242);
 	font-family: 'Noto Sans TC', sans-serif;
@@ -39,7 +39,7 @@ body{
 	border-top: 100vh solid #F8A13A;
 	border-right: 50vw solid transparent;
 	height: 0;
-	width: 75%;
+	width: 80%;
 }
 #right{
 	position: absolute;
@@ -54,25 +54,29 @@ body{
 	position: absolute;
 	top:10vmin;
 	left:10vmin;
-	font-size: 40pt;
+	font-size: 32pt;
 	line-height: 60pt;
 	color:#191919;
 }
 #title>img{
-	width: 40%;
+	width: 32%;
 }
 #subtitle{
 	position: absolute;
 	bottom:10vmin;
 	right:10vmin;
 	text-align: right;
-	font-size: 40pt;
-	color: #eaeaea;
+	font-size: 32pt;
+	color: #EAEAEA;
+}
+#subtitle>a{
+	font-size:16pt;
+	color: #EAEAEA;
 }
 .pagetitle{
 	margin-top: 50px;
 	margin-bottom: 20px;
-	font-size: 36pt;
+	font-size: 28pt;
 	text-align: center;
 	font-weight: bold;
 }
@@ -85,37 +89,28 @@ body{
 	font-size: 18pt;
 }
 #introcontent{
-	display: flex;
-	align-items:center;
+	align-items:top;
 	width: 60%;
 	padding: 0;
 	margin: auto auto;
 }
 #introslogan{
 	float: left;
-	width: 30%;
-	position: relative;
+	flex: 2 0 0;
 	margin: 0;
-	padding: 25px;
+	padding: 0 25px 25px 25px;
 	font-size: 18pt;
 	font-style: italic;
 	color: #5b5b5b;
 }
 #introtext{
 	float: left;
-	width: 70%;
-	position: relative;
+	flex:3 0 0;
 	margin: 0;
-}
-@media (max-width: 1200px) {
-	#introcontent{
-		width: 80%;
-	}
 }
 @media (max-width: 992px) {
 	#introcontent{
 		display: block;
-		width: 80%;
 	}
 	#introslogan{
 		width: 100%;
@@ -125,20 +120,24 @@ body{
 	}
 }
 .teams{
-	display: flex;
-	flex-direction: row
+	width: 60%;
+	margin: 0 auto;
 }
 .teams .title{
 	font-size: 24pt;
 	text-align: center;
 }
 .teams>.team{
-	flex: 1;
+	flex: 1 0 0;
 	margin: 20px;
 	border-radius: 5px;
 	color: #eaeaea;
 	background-color: #3C3C3C;
 	padding: 10px;
+	transition: all 300ms;
+}
+.teams>.team:hover{
+	background-color:#888; 
 }
 .teams .des{
 	display:none;
@@ -146,7 +145,8 @@ body{
 
 /*LEADERS*/
 #leaders{
-	padding: 0 10%;
+	width: 60%;
+	margin:0 auto;
 }
 .leader{
 	margin: 10px 0;
@@ -179,6 +179,7 @@ body{
 }
 .leaderintro>.name{
 	font-size: 24pt;
+	line-height: 1em;
 }
 #main-leader>.headpic{
 	background-image: url(https://scontent-nrt1-1.xx.fbcdn.net/v/t1.0-9/15727277_1828300477388588_6060767802767923386_n.jpg?oh=fda12da0dea605b92a1e87e0e76aac46&oe=5AAA8813);
@@ -203,30 +204,46 @@ body{
 }
 
 #signup{
-	height: 100vh;
-	position:relative;
+	width: 200px;
+	margin: 50px auto;
 }
-#signup>iframe{
-	width:100%;
-	flex:1 0 0;
-	z-index: 50;
-}
-#iframe-curtain{
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	top: 0; 
-	left: 0;
-	right: 0;
-	bottom: 0;
-	position: absolute;
-	z-index: 100;
+#signup>a{
+	padding: 5px;
+	margin: 10px;
+	text-align: center;
+	border-radius: 5px;
+	background-color:#49514D; 
+	color:white;
+	transition: all 300ms;
 }
 
-@media (max-width: 992px) {
-	.swal2-modal{
-		width: 90% !important;
-		height: 90% !important;
-		border-radius: 0;
-	}
+#signup>a:hover{
+	background-color:#888; 
+}
+
+.swal2-modal li,.swal2-modal p{
+	text-align: left!important;
+}
+
+@media (max-width: 1200px){
+#introcontent,.teams,#leaders{
+	width: 70%;
+}
+}
+
+@media (max-width: 992px){
+#introcontent,.teams,#leaders{
+	width: 80%;
+}
+.swal2-modal p,.swal2-modal ul{
+	width: 90% !important;
+	height: 90% !important;
+	border-radius: 0;
+}
+}
+
+@media (max-width: 640px){
+#introcontent,.teams,#leaders{
+	width: 90%;
+}
 }
