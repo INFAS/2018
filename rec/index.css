@@ -5,6 +5,10 @@ body{
 	overflow-x: hidden;
 	overflow-y: hidden;
 }
+body.swal2-shown{
+	padding: 0!important;
+}
+
 
 #titlebar{
 	position: relative;
