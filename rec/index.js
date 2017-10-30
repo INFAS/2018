@@ -11,7 +11,6 @@ function clicked(e,f){
 	e.addEventListener('click',f)
 }
 
-
 if(!String.prototype.includes)
 	String.prototype.includes = function() {
 		'use strict';
@@ -22,7 +21,7 @@ var isIE = !(agentHas('Chrome')||agentHas('Opera')||agentHas('Safari')||
 	agentHas('Edge')||agentHas('Firefox')||agentHas('AppleWebKit'));
 
 function showpage(){
-	$('#loadpage').style.position = 'absolute'
+//	$('#loadpage').style.position = 'absolute'
 	$('#loadpage>span').style.opacity = 0;
 	$('#loadpage>.left').style.left = 0
 	$('#loadpage>.right').style.right = 0
@@ -30,6 +29,7 @@ function showpage(){
 	$('#loadpage>.right').style.bottom = 0
 	$('body').style.overflowY = 'auto'
 	setTimeout(()=>{
+		$('html').scrollTop = 0
 		$('#loadpage').style.opacity = 0
 		setTimeout(()=>{
 			$('#loadpage').style.display = 'none'
