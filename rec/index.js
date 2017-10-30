@@ -55,6 +55,7 @@ loaded(window,()=>{
 			width: '70%',
 			padding: '50'
 		})
+		$('.swal2-modal').scrollTop = 0
 	})})
 })
 
