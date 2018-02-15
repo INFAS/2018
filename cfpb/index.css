@@ -1,0 +1,170 @@
+/* Fonts */
+body {
+	font-family: 'Noto Sans',
+	             'Microsoft JhengHei',
+	             sans-serif;
+	color: #000000;
+}
+
+/* Deneral */
+.page {
+	position: relative;
+}
+
+.title{
+	text-align: center;
+	font-size: 2.5em;
+}
+
+#title {
+	height: 50vh;
+	background-color: #FFFFFF;
+}
+
+#intro {
+	height: 60vw;
+	padding: 5vw 15vw;
+	background-color: #6E8185;
+	color: #FFFFFF;
+}
+
+#paper {
+	margin: 0 5vw;
+	height: 56vw;
+	padding: 3vw 3vw;
+	background-color: #52CBC9;
+}
+
+#booth {
+	margin: 0 5vw;
+	height: 56vw;
+	padding: 3vw 3vw;
+	background-color: #52CBC9;
+}
+
+/* Title */
+#title>.wrap {
+
+}
+
+#title #logo {
+	margin-right: 2vw;
+	width: 15vw;
+	height: 15vw;
+	overflow: hidden;
+	border-radius: 50%;
+	background-color: #68C7D5;
+}
+
+#title #logo>img {
+	width: 100%;
+	height: 100%;
+}
+
+#title .text {
+	justify-content: center;
+}
+
+#title #infas {
+	margin-right: 1vw;
+	font-size: 4em;
+}
+
+#title #cfpb {
+	font-size: 2em;
+}
+
+#title #theme {
+	font-size: 1.5em;
+}
+
+/* Intro */
+#intro .title {
+	color: #FFFFFF;
+}
+
+#intro .title::after {
+	content: '';
+	display: block;
+	width: 4vw;
+	height: .3vw;
+	margin: 3vw auto;
+	background-color: #FFFFFF;	
+}
+
+/* Paper & booth */
+#paper .photo,
+#booth .photo {
+	flex: 6 0 0;
+}
+
+#paper .content,
+#booth .content {
+	flex: 4 0 0;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#paper .title,
+#booth .title {
+	letter-spacing: .5ch;
+}
+
+#paper .button,
+#booth .button {
+	padding: 1vw 4vw;
+	text-align: center;
+	font-size: 1.2em;
+	border-radius: calc(1em + 2vw);
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+#paper .monitor,
+#booth .monitor {
+	width: 100%;
+	height: 35vw;
+	padding: 2vw 3vw;
+	background-color: #3A5D59;
+	border-radius: 1vw;
+}
+
+#paper .screen,
+#booth .screen {
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#paper .base,
+#booth .base {
+	width: 20vw;
+	height: 13vw;
+	background-color: #B7C4C1;
+}
+
+#paper .red {
+	color: #FD6162;
+}
+
+#paper .button {
+	background-color: #FD6162;
+}
+
+#booth .blue {
+	color: #576FBA;
+}
+
+#booth .button {
+	background-color: #576FBA;
+}
+
+#paper .screen {
+	background-image: url('');
+}
+
+#booth .screen {
+	background-image: url('');
+}

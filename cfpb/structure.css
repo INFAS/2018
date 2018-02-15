@@ -1,0 +1,47 @@
+* {
+	box-sizing: border-box;
+}
+
+a, input, textarea, select, button {
+	font-size: inherit;
+	line-height: inherit;
+	border: none;
+	font-family: inherit;
+	color: inherit;
+}
+
+body {
+	margin: 0;
+	font-size: 1.5vw;
+/*	user-select: none;*/
+}
+
+#bodywrap{
+	width: 100%;
+	overflow-x: hidden;
+}
+
+.flex {
+	display: flex;
+}
+
+.column {
+	flex-direction: column;
+}
+
+.row {
+	flex-direction: row;
+}
+
+.fullscreen {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+}
+
+.center {
+	align-items: center;
+	justify-content: center;
+}
