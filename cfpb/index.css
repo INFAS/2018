@@ -6,7 +6,7 @@ body {
 	color: #000000;
 }
 
-/* Deneral */
+/* General */
 .page {
 	position: relative;
 }
@@ -17,12 +17,13 @@ body {
 }
 
 #title {
-	height: 50vh;
+	height: 50vw;
+	min-height: 60vh;
+	max-height: 100vh;
 	background-color: #FFFFFF;
 }
 
 #intro {
-	height: 60vw;
 	padding: 5vw 15vw;
 	background-color: #6E8185;
 	color: #FFFFFF;
@@ -43,10 +44,6 @@ body {
 }
 
 /* Title */
-#title>.wrap {
-
-}
-
 #title #logo {
 	margin-right: 2vw;
 	width: 15vw;
@@ -92,6 +89,13 @@ body {
 	background-color: #FFFFFF;	
 }
 
+#intro #slogan {
+	text-align: center;	
+	font-style: italic;
+	font-size: 1.5em;
+	color: #CCCCCC;
+}
+
 /* Paper & booth */
 #paper .photo,
 #booth .photo {
@@ -107,7 +111,7 @@ body {
 
 #paper .title,
 #booth .title {
-	letter-spacing: .5ch;
+	letter-spacing: .3ch;
 }
 
 #paper .button,
@@ -162,9 +166,9 @@ body {
 }
 
 #paper .screen {
-	background-image: url('');
+/*	background-image: url('');*/
 }
 
 #booth .screen {
-	background-image: url('');
+/*	background-image: url('');*/
 }
