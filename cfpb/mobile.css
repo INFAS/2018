@@ -29,6 +29,8 @@ body{
 /* Title */
 #title {
 	height: 130vw;
+	min-height: 50vh;
+	max-height: 100vh;
 }
 
 #title>.text {
@@ -56,7 +58,12 @@ body{
 
 /* Paper & Booth */
 #paper, #booth {
-	height: 150vw;
+	height: auto;
+}
+
+#paper .content,
+#booth .content {
+	flex: 0 0 auto;
 }
 
 #paper .photo,
