@@ -1,0 +1,73 @@
+@media (orientation: portrait) {
+
+/* General */
+body{
+	font-size: 3vw;
+}
+
+.m-flex {
+	display: flex;
+}
+
+.m-column {
+	flex-direction: column;
+}
+
+.m-column-r {
+	flex-direction: column-reverse;
+}
+
+.m-row {
+	flex-direction: row;
+}
+
+.m-center {
+	align-items: center;
+	justify-content: center;
+}
+
+/* Title */
+#title {
+	height: 130vw;
+}
+
+#title>.text {
+	text-align: center;
+}
+
+#title #infas {
+	margin: 0;
+}
+
+#title #logo {
+	width: 50vw;
+	height: 50vw;
+	margin: 0;
+}
+
+/* Intro */
+#intro {
+	padding: 15vw 8vw; 
+}
+
+#intro #slogan {
+	font-size: 1.25em;
+}
+
+/* Paper & Booth */
+#paper, #booth {
+	height: 150vw;
+}
+
+#paper .photo,
+#booth .photo {
+	flex: 0 0 auto;
+	margin-top: 5vw;
+}
+
+#paper .monitor,
+#booth .monitor {
+	height: 50vw;
+}
+
+}
