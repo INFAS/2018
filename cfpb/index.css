@@ -171,9 +171,12 @@ body {
 #booth .monitor {
 	width: 100%;
 	height: 35vw;
-	padding: 2vw 3vw;
+	padding: 1.5vw 2vw;
 	background-color: #3A5D59;
 	border-radius: 1vw;
+	border: solid 1px #DDDDDD;
+	border-bottom-color: #333333;
+	border-right-color: #333333;
 }
 
 #paper .screen,
@@ -183,6 +186,10 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	border-radius: .5vw;
+	border: solid 1px #DDDDDD;
+	border-top-color: #333333;
+	border-left-color: #333333;
 }
 
 #paper .base,
@@ -212,9 +219,9 @@ body {
 }
 
 #paper .screen {
-/*	background-image: url('');*/
+	background-image: url('paper.jpg');
 }
 
 #booth .screen {
-/*	background-image: url('');*/
+	background-image: url('booth.jpg');
 }
