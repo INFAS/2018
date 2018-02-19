@@ -18,8 +18,9 @@ body {
 
 #title {
 	height: 40vw;
-	min-height: 40vh;
-	max-height: 100vh;
+	padding: 3vw;
+	min-height: auto;
+	max-height: none;
 	background-color: #FFFFFF;
 }
 
@@ -72,9 +73,11 @@ body {
 
 /* Title */
 #title #logo {
-	margin-right: 2vw;
-	width: 25vw;
-	height: 25vw;
+	margin-right: 3vw;
+	width: 15em;
+	max-width: 50vw;
+	height: 15em;
+	max-height: 50vw;
 	overflow: hidden;
 	border-radius: 50%;
 	background-color: #68C7D5;
@@ -92,7 +95,7 @@ body {
 #title #infas {
 	margin-right: 1vw;
 	font-size: 4em;
-	line-height: 1.5em;
+	line-height: 1em;
 }
 
 #title #cfpb {
@@ -101,8 +104,8 @@ body {
 }
 
 #title #theme {
-	font-size: 1.5em;
-	line-height: 2em;
+	font-size: 1.6em;
+	line-height: 1.5em;
 }
 
 /* Intro */
@@ -122,7 +125,7 @@ body {
 #intro #slogan {
 	text-align: center;	
 	font-style: italic;
-	font-size: 1.5em;
+	font-size: 1.4em;
 	line-height: 1.5em;
 	color: #CCCCCC;
 }

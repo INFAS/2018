@@ -10,9 +10,13 @@ a, input, textarea, select, button {
 	color: inherit;
 }
 
+br.hide{
+	display: none;
+}
+
 body {
 	margin: 0;
-	font-size: 1.5vw;
+	font-size: 12pt;
 /*	user-select: none;*/
 }
 
