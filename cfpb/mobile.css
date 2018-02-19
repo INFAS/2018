@@ -61,6 +61,11 @@ body{
 	height: auto;
 }
 
+#paper .title,
+#booth .title {
+	margin-top: 2vw;
+}
+
 #paper .content,
 #booth .content {
 	flex: 0 0 auto;

@@ -37,7 +37,7 @@ body {
 }
 
 #paper::after {
-	content: '/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////';
+	content: '////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////';
 	display: block;
 	width: calc(100% - 2vw);
 	margin: 0 1vw;
@@ -92,14 +92,17 @@ body {
 #title #infas {
 	margin-right: 1vw;
 	font-size: 4em;
+	line-height: 1.5em;
 }
 
 #title #cfpb {
 	font-size: 2em;
+	line-height: 1.5em;
 }
 
 #title #theme {
 	font-size: 1.5em;
+	line-height: 1.5em;
 }
 
 /* Intro */
@@ -120,7 +123,12 @@ body {
 	text-align: center;	
 	font-style: italic;
 	font-size: 1.5em;
+	line-height: 1.5em;
 	color: #CCCCCC;
+}
+
+#intro .description {
+	line-height: 1.5em;
 }
 
 /* Paper & Booth */
@@ -140,6 +148,7 @@ body {
 #paper .title,
 #booth .title {
 	letter-spacing: .3ch;
+	line-height: 1.5em;
 }
 
 #paper .button,
@@ -147,9 +156,15 @@ body {
 	padding: 1vw 4vw;
 	text-align: center;
 	font-size: 1.2em;
+	line-height: 1.5em;
 	border-radius: calc(1em + 2vw);
 	color: #FFFFFF;
 	cursor: pointer;
+}
+
+#paper .description,
+#booth .description {
+	line-height: 1.5em;
 }
 
 #paper .monitor,
