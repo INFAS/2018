@@ -1,85 +1,136 @@
-@media (orientation: portrait) {
+@media (max-width: 900px) {
+	/* General */
+	body{
+		font-size: 2.5vw;
+	}
 
-/* General */
-body{
-	font-size: 3vw;
+	.s-flex {
+		display: flex;
+	}
+
+	.s-column {
+		flex-direction: column;
+	}
+
+	.s-column-r {
+		flex-direction: column-reverse;
+	}
+
+	/* Intro */
+	#intro #slogan {
+		font-size: 1.3em;
+	}
+
+	#intro .description {
+		font-size: 1.1em;
+	}
+
+	/* Paper & Booth */
+	#paper, #booth {
+		height: auto;
+	}
+
+	#paper .title,
+	#booth .title {
+		margin-top: 2vw;
+	}
+
+	#paper .content,
+	#booth .content {
+		flex: 0 0 auto;
+	}
+
+	#paper .description,
+	#booth .description {
+		font-size: 1.2em;
+	}
+
+	#paper .photo,
+	#booth .photo {
+		flex: 0 0 auto;
+		margin-top: 4vw;
+	}
 }
 
-.m-flex {
-	display: flex;
+@media (orientation: portrait){
+	/* General */
+	.p-flex {
+		display: flex;
+	}
+
+	.p-column {
+		flex-direction: column;
+	}
+
+	.p-column-r {
+		flex-direction: column-reverse;
+	}
+
+	/* Title */
+	#title {
+		height: 130vw;
+		min-height: 50vh;
+		max-height: 100vh;
+	}
+
+	#title>.text {
+		text-align: center;
+		margin-top: 5vw;
+	}
+
+	#title #infas {
+		margin: 0;
+	}
+
+	#title #logo {
+		width: 50vw;
+		height: 50vw;
+		margin: 0;
+	}
+
+	/* Intro */
+	#intro {
+		padding: 15vw 8vw; 
+	}
+
+	/* Paper & Booth */
+	#paper, #booth {
+		height: auto;
+	}
+
+	#paper .content,
+	#booth .content {
+		flex: 0 0 auto;
+	}
+
+	#paper .photo,
+	#booth .photo {
+		flex: 0 0 auto;
+		margin-top: 4vw;
+	}
+
+	#paper .monitor,
+	#booth .monitor {
+		height: 50vw;
+	}
 }
 
-.m-column {
-	flex-direction: column;
-}
+@media (orientation: landscape) and (max-width: 900px) {
+	/* Title */
+	#title {
+		height: 100vh;
+		min-height: 300px;
+	}
 
-.m-column-r {
-	flex-direction: column-reverse;
-}
+	#title #logo {
+		width: 35vw;
+		height: 35vw;
+	}
 
-.m-row {
-	flex-direction: row;
-}
-
-.m-center {
-	align-items: center;
-	justify-content: center;
-}
-
-/* Title */
-#title {
-	height: 130vw;
-	min-height: 50vh;
-	max-height: 100vh;
-}
-
-#title>.text {
-	text-align: center;
-}
-
-#title #infas {
-	margin: 0;
-}
-
-#title #logo {
-	width: 50vw;
-	height: 50vw;
-	margin: 0;
-}
-
-/* Intro */
-#intro {
-	padding: 15vw 8vw; 
-}
-
-#intro #slogan {
-	font-size: 1.25em;
-}
-
-/* Paper & Booth */
-#paper, #booth {
-	height: auto;
-}
-
-#paper .title,
-#booth .title {
-	margin-top: 2vw;
-}
-
-#paper .content,
-#booth .content {
-	flex: 0 0 auto;
-}
-
-#paper .photo,
-#booth .photo {
-	flex: 0 0 auto;
-	margin-top: 5vw;
-}
-
-#paper .monitor,
-#booth .monitor {
-	height: 50vw;
-}
-
+	/* Paper & Booth */
+	#paper .monitor,
+	#booth .monitor {
+		height: 35vw;
+		width: 50vw;
+	}
 }
