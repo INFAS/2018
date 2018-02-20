@@ -89,7 +89,9 @@ body {
 }
 
 #title .text {
-	justify-content: center;
+	-webkit-justify-content: center;
+	    -ms-justify-content: center;
+	        justify-content: center;
 }
 
 #title #infas {
@@ -137,14 +139,22 @@ body {
 /* Paper & Booth */
 #paper .photo,
 #booth .photo {
-	flex: 5.5 0 0;
+	-webkit-flex: 5.5 0 0;
+	    -ms-flex: 5.5 0 0;
+	        flex: 5.5 0 0;
 }
 
 #paper .content,
 #booth .content {
-	flex: 4.5 0 0;
-	justify-content: space-between;
-	align-items: center;
+	-webkit-flex: 4.5 0 0;
+	    -ms-flex: 4.5 0 0;
+	        flex: 4.5 0 0;
+	-webkit-justify-content: space-between;
+	    -ms-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-align-items: center;
+	    -ms-align-items: center;
+	        align-items: center;
 	padding: 0 2vw 1.5vw 2vw;
 }
 
