@@ -16,6 +16,12 @@ body {
 	font-size: 2.5em;
 }
 
+.subtitle {
+	text-align: center;
+	font-size: 2em;
+	margin-top: 1em;
+}
+
 #title {
 	height: 40vw;
 	padding: 3vw;
@@ -32,7 +38,6 @@ body {
 
 #paper {
 	margin: 0 4vw;
-	height: 50vw;
 	padding: 3vw 3vw;
 	background-color: #52CBC9;
 }
@@ -53,7 +58,6 @@ body {
 
 #booth {
 	margin: 0 4vw 4vw 4vw;
-	height: 50vw;
 	padding: 4vw 3vw 3vw 3vw;
 	background-color: #52CBC9;
 	border-bottom-left-radius: 2vw;
@@ -111,7 +115,8 @@ body {
 }
 
 /* Intro */
-#intro .title {
+#intro .title
+#intro .subtitle {
 	color: #FFFFFF;
 }
 
@@ -149,13 +154,22 @@ body {
 	-webkit-flex: 4.5 0 0;
 	    -ms-flex: 4.5 0 0;
 	        flex: 4.5 0 0;
+
 	-webkit-justify-content: space-between;
 	    -ms-justify-content: space-between;
 	        justify-content: space-between;
 	-webkit-align-items: center;
 	    -ms-align-items: center;
 	        align-items: center;
-	padding: 0 2vw 1.5vw 2vw;
+	padding: 0 0 1.5vw 3vw;
+}
+
+#paper .content {
+	padding: 0 0 1.5vw 3vw;
+}
+
+#booth .content {
+	padding: 0 3vw 1.5vw 0;
 }
 
 #paper .title,
