@@ -36,28 +36,13 @@
 	}
 
 	/* Paper & Booth */
-	#paper, #booth {
-		height: auto;
+	#paper {
+		padding: 3vw;
+		margin: 0 3vw 4vw 3vw;
 	}
 
-	#paper .title,
-	#booth .title {
+	#paper .title {
 		margin-top: 2vw;
-	}
-
-	#paper .content,
-	#booth .content {
-		-webkit-flex: 0 0 auto;
-		    -ms-flex: 0 0 auto;
-		        flex: 0 0 auto;
-	}
-
-	#paper .photo,
-	#booth .photo {
-		-webkit-flex: 0 0 auto;
-		    -ms-flex: 0 0 auto;
-		        flex: 0 0 auto;
-		margin-top: 4vw;
 	}
 }
 
@@ -81,15 +66,15 @@
 
 	/* Title */
 	#title {
-		height: 120vw;
-		max-height: 100vh;
+		height: 100vh;
+		background-position: top;
 	}
 
 	#title #logo{
 		margin: 0;
 	}
 
-	#title>.text {
+	#title>.wrap>.text {
 		text-align: center;
 		margin-top: 5vw;
 	}
@@ -97,28 +82,14 @@
 	#title #infas {
 		margin: 0;
 	}
-
-	/* Paper & Booth */
-	#paper .monitor,
-	#booth .monitor {
-		width: 100%;
-		height: 50vw;
-	}
 }
 
 @media (orientation: landscape) and (max-width: 850px) {
 	/* Title */
 	#title {
-		height: 45vw;
+		height: 100vh;
 		min-height: auto;
 		max-height: none;
-	}
-
-	/* Paper & Booth */
-	#paper .monitor,
-	#booth .monitor {
-		height: 35vw;
-		width: 50vw;
 	}
 
 	#title #logo {
@@ -140,7 +111,7 @@
 	}
 
 	.description{
-		letter-spacing: .1ch;
+		letter-spacing: .05ch;
 	}
 
 	br.s-show{
@@ -150,6 +121,14 @@
 
 @media (max-width: 480px) {
 	body {
-		font-size: 3.3vw;
+		font-size: 4vw;
+	}
+
+	#intro #slogan {
+		font-size: 1.2em;
+	}
+
+	#intro .subtitle {
+		font-size: 1.6em;
 	}
 }

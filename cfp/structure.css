@@ -11,6 +11,14 @@ a, input, textarea, select, button {
 	text-decoration: none;
 }
 
+ol, ul{
+	padding-left: 1.5em;
+}
+
+a {
+	color: #3F5CBF
+}
+
 br.hide{
 	display: none;
 }
