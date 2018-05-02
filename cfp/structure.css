@@ -19,6 +19,10 @@ a {
 	color: #3F5CBF
 }
 
+b, h2 {
+	font-weight: 500;
+}
+
 br.hide{
 	display: none;
 }
