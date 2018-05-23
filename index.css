@@ -1,0 +1,148 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+/* Fonts */
+body {
+	font-family: 'Noto Sans TC', sans-serif;
+	font-weight: 300;
+	color: #3C3C3C;
+	padding-top: 4em;
+	background-color: #EEEEEE;
+}
+
+/* General */
+.section {
+	position: relative;
+	padding: 1.5em 10%;
+	margin: 0 0 0 calc(5% - .6em);
+	border-left: solid .6em #6EC09E;
+}
+
+.title{
+	text-align: center;
+	font-size: 2em;
+	font-weight: 500;
+	margin: .5em 0;
+}
+
+.title::after {
+	content: '';
+	display: block;
+	width: 20vw;
+	height: .2vw;
+	margin: 1vw auto;
+	background-color: #3C3C3C;
+}
+
+.subtitle {
+	text-align: center;
+	font-size: 2em;
+	margin-top: 1em;
+	font-weight: 400;
+}
+
+/* Title */
+#navbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 4em;
+	z-index: 1000;
+	background-color: #FFFFFF;
+}
+
+#logo {
+	margin: .5em 0 .5em calc(5% - .6em);
+	border-left: solid .6em #6EC09E;
+}
+
+#logo>span {
+	font-size: 4em;
+	line-height: .67em;
+	font-weight: 700;
+	margin: 0 .2ch;
+	color: #6EC09E;
+}
+
+#nav-group {
+	width: 100%;
+}
+
+#nav-group>.nav {
+	font-size: 1.25em;
+	font-weight: 400;
+	display: flex;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 2em;
+	-webkit-flex: 1 0 0;
+	    -ms-flex: 1 0 0;
+	        flex: 1 0 0;
+	-webkit-align-items: center;
+	    -ms-align-items: center;
+	        align-items: center;
+	-webkit-justify-content: center;
+	    -ms-justify-content: center;
+	        justify-content: center;
+	transition: background-color 200ms;
+}
+
+#nav-group>.nav:hover {
+	background-color: rgba(0,0,0,.2)
+}
+
+/* Topic */
+#topic {
+}
+
+#slogan {
+	text-align: center;
+  font-style: italic;
+  font-size: 1.4em;
+  line-height: 1.5em;
+  color: #666666;
+}
+
+.description {
+	line-height: 1.5em;
+}
+
+/* Agenda */
+#agenda table {
+	width: 100%;
+}
+
+#agenda td {
+	background-color: #6E8185;
+	color: #EEEEEE;
+	padding: .5em;
+}
+
+#agenda .time {
+	text-align: center;
+}
+
+/* Staff */
+#staff .group-title {
+	font-size: 1.5em;
+	font-weight: 400;
+}
+
+#staff .staff-card {
+	display: inline-block;
+	margin: 1.5em .5em;
+}
+
+#staff .staff-photo {
+	text-align: center;
+	width: 100px;
+	height: 100px;
+}
+
+#staff .staff-photo>img {
+	width: 100%;
+	height: 100%;
+}
+
+#staff .staff-name {
+	text-align: center;
+}
