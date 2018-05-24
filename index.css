@@ -5,7 +5,6 @@ body {
 	font-family: 'Noto Sans TC', sans-serif;
 	font-weight: 300;
 	color: #3C3C3C;
-	padding-top: 4em;
 	background-color: #EEEEEE;
 }
 
@@ -39,6 +38,67 @@ body {
 	margin-top: 1em;
 	font-weight: 400;
 }
+
+/* Intro */
+#intro {
+	background-color: #49514D;
+	width:100vw;
+	margin: 0;
+	height: 80vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+#intro-logo {
+	width: 30vw;
+	height: 30vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin-left:auto;
+	margin-right:auto;
+}
+#intro-logo > img {
+	max-width: 30vw;
+	max-height: 30vh;
+}
+
+#intro-text {
+	text-align:center;
+	margin: 0 auto;
+	width: 100%;
+	font-size: 30px;
+	color: white;
+}
+
+@media screen and (max-width: 700px) {
+	#intro {
+		height: 100vh;
+	}
+	#intro-logo {
+		width: 90vw;
+		height: 50vh;
+	}
+	#intro-logo > img {
+		max-width: 90vw;
+		max-height: 50vh;
+	}
+}
+@media screen and (max-width: 1400px) and (min-width: 700px) {
+	#intro {
+		height: 90vh;
+	}
+	#intro-logo {
+		width: 60vw;
+		height: 50vh;
+	}
+	#intro-logo > img {
+		max-width: 60vw;
+		max-height: 50vh;
+	}
+}
+
 
 /* Title */
 #navbar {
