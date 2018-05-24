@@ -156,10 +156,10 @@ body {
 
 #slogan {
 	text-align: center;
-  font-style: italic;
-  font-size: 1.4em;
-  line-height: 1.5em;
-  color: #666666;
+	font-style: italic;
+	font-size: 1.4em;
+	line-height: 1.5em;
+	color: #666666;
 }
 
 .description {
@@ -205,4 +205,20 @@ body {
 
 #staff .staff-name {
 	text-align: center;
+}
+
+/* Sponsor */
+.sponsor-photo, .sponsor-name {
+	width: 33%;
+	display: inline-block;
+    white-space: nowrap;
+    text-align: center;
+}
+.sponsor-photo > img {
+	max-height: 100%;
+	max-width: 100%;
+	margin: 0 auto;
+}
+#sponsor {
+	margin-bottom: 30px;
 }
