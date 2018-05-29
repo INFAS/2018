@@ -1,11 +1,19 @@
 @import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
 
-/* Fonts */
 body {
 	font-family: 'Noto Sans TC', sans-serif;
 	font-weight: 300;
 	color: #3C3C3C;
 	background-color: #EEEEEE;
+	font-size: 16pt;
+}
+
+a {
+	color: #6EC09E;
+}
+
+a:hover {
+	color: #49514D;
 }
 
 /* General */
@@ -41,64 +49,28 @@ body {
 
 /* Intro */
 #intro {
+	padding-top: 4em;
 	background-color: #49514D;
-	width:100vw;
 	margin: 0;
 	height: 80vh;
-	display:flex;
-	justify-content:center;
-	align-items:center;
 }
 
 #intro-logo {
-	width: 30vw;
-	height: 30vh;
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	margin-left:auto;
-	margin-right:auto;
+	width: 70vh;
+	text-align: center;
 }
 #intro-logo > img {
-	max-width: 30vw;
-	max-height: 30vh;
+	max-width: 70vh;
 }
 
 #intro-text {
 	text-align:center;
-	margin: 0 auto;
+	margin: .5em auto;
 	width: 100%;
-	font-size: 30px;
+	font-size: 2.5em;
 	color: white;
+	font-weight: 500;
 }
-
-@media screen and (max-width: 700px) {
-	#intro {
-		height: 100vh;
-	}
-	#intro-logo {
-		width: 90vw;
-		height: 50vh;
-	}
-	#intro-logo > img {
-		max-width: 90vw;
-		max-height: 50vh;
-	}
-}
-@media screen and (max-width: 1400px) and (min-width: 700px) {
-	#intro {
-		height: 90vh;
-	}
-	#intro-logo {
-		width: 60vw;
-		height: 50vh;
-	}
-	#intro-logo > img {
-		max-width: 60vw;
-		max-height: 50vh;
-	}
-}
-
 
 /* Title */
 #navbar {
@@ -111,11 +83,17 @@ body {
 }
 
 #logo {
-	margin: .5em 0 .5em calc(5% - .6em);
+	display: block;
+	margin: 0 0 0 calc(5% - 1.1em);
+}
+
+#logowrap {
+	margin: .5em 0 .5em .5em;
+	height: calc(100% - 1em);
 	border-left: solid .6em #6EC09E;
 }
 
-#logo>span {
+#logo span {
 	font-size: 4em;
 	line-height: .67em;
 	font-weight: 700;
@@ -128,12 +106,13 @@ body {
 }
 
 #nav-group>.nav {
+	color: #000000;
 	font-size: 1.25em;
 	font-weight: 400;
 	display: flex;
 	text-align: center;
 	vertical-align: middle;
-	line-height: 2em;
+	line-height: 1.2em;
 	-webkit-flex: 1 0 0;
 	    -ms-flex: 1 0 0;
 	        flex: 1 0 0;
@@ -146,7 +125,7 @@ body {
 	transition: background-color 200ms;
 }
 
-#nav-group>.nav:hover {
+.nav:hover {
 	background-color: rgba(0,0,0,.2)
 }
 
@@ -167,6 +146,11 @@ body {
 }
 
 /* Agenda */
+#agenda {
+	padding-left: 3em;
+	padding-right: 3em;
+}
+
 #agenda table {
 	width: 100%;
 }
@@ -175,10 +159,102 @@ body {
 	background-color: #6E8185;
 	color: #EEEEEE;
 	padding: .5em;
+	text-align: center;
+}
+
+#agenda td[data-agenda-id] {
+	cursor: pointer;
 }
 
 #agenda .time {
 	text-align: center;
+	width: 8ch;
+	padding: .5em .5ch;
+	line-height: 1.25em;
+}
+
+#agenda .agenda-name {
+	font-size: 1.25em;
+	font-weight: 500;
+}
+
+#agenda-content {
+	display: none;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 2018;
+	padding: 2em;
+	background-color: #3C3C3C;
+	color: #C8C8C8;
+	overflow: auto;
+}
+
+#agenda-content .wrap {
+	padding-bottom: 2em;
+}
+
+#agenda-content .padding {
+	-webkit-flex: 1 0 0;
+	    -ms-flex: 1 0 0;
+	        flex: 1 0 0;
+}
+
+#agenda-content #agenda-exit {
+	font-size: 50px;
+	position: absolute;
+	border-radius: 50%;
+	background-color: rgba(0,0,0,.7);
+	top: 20px;
+	right: 20px;
+	height: 70px;
+	width: 70px;
+	cursor: pointer;
+}
+
+#agenda-content #agenda-info {
+	-webkit-flex: 2 0 0;
+	    -ms-flex: 2 0 0;
+	        flex: 2 0 0;
+	padding-right: 2ch;
+}
+
+#agenda-content #agenda-title {
+	font-size: 2.5em;
+	font-weight: 600;
+}
+
+#agenda-content #agenda-time {
+	font-family: monospace;
+	font-size: 1em;
+	font-weight: 200;
+}
+
+#agenda-content #agenda-description {
+}
+
+#agenda-content #agenda-speaker {
+	-webkit-flex: 1 0 0;
+	    -ms-flex: 1 0 0;
+	        flex: 1 0 0;
+}
+
+#agenda-content #agenda-headpic {
+	width: 100%;
+}
+
+#agenda-content #agenda-headpic>img {
+	width: 100%;
+}
+
+#agenda-content #agenda-name {
+	font-size: 2em;
+	font-weight: 500;
+}
+
+#agenda-content #agenda-speakerinfo {
 }
 
 /* Staff */
@@ -208,17 +284,32 @@ body {
 }
 
 /* Sponsor */
-.sponsor-photo, .sponsor-name {
-	width: 33%;
-	display: inline-block;
-    white-space: nowrap;
-    text-align: center;
+.sponsor-card {
+	-webkit-flex: 1 0 0;
+	    -ms-flex: 1 0 0;
+	        flex: 1 0 0;
 }
+
+.sponsor-photo {
+	height: 30vh;
+	padding: 1em;
+	display: flex;
+	-webkit-align-items: center;
+	    -ms-align-items: center;
+	        align-items: center;
+	-webkit-justify-content: center;
+	    -ms-justify-content: center;
+	        justify-content: center;
+}
+
+.sponsor-name {
+  white-space: nowrap;
+  text-align: center;
+	padding-bottom: 2em;
+}
+
 .sponsor-photo > img {
+	display: block;
 	max-height: 100%;
 	max-width: 100%;
-	margin: 0 auto;
-}
-#sponsor {
-	margin-bottom: 30px;
 }

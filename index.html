@@ -8,12 +8,12 @@
 	<link href="structure.css" rel="stylesheet"/>
 	<link href="index.css" rel="stylesheet"/>
 	<link href="mobile.css" rel="stylesheet"/>
-	<script src="general.js"></script>
-	<meta property="og:url" content="http://infas.club/2018/cfp/">
+	<script src="jquery.js"></script>
+	<meta property="og:url" content="http://infas.club/2018/">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="INFAS 2018">
-	<meta property="og:image" content="">
-	<!--meta property="og:description" content=""-->
+	<meta property="og:image" content="2018og.png">
+	<meta property="og:description" content="INFAS 2018 將在 06/10 (日) 於國立交通大學工程三館舉辦。INFAS 每年舉辦專為全台灣對資訊有興趣、有熱情之中學生規劃的年會，包含各式各樣的資訊講題與分享交流，希望能夠將資訊領域推廣出去。">
 	<meta property="og:locale" content="zh_TW">
 	<link rel="shorcut icon" href="favicon256.png">
 	<link rel="icon" type="image/png" href="favicon256.png" sizes="256x256">
@@ -26,24 +26,24 @@
 </head>
 <body><div id="bodywrap">
 	<div id="navbar" class="flex row">
-		<div id="logo">
-			<!--img src="" alt="INFAS"-->
-			<span id="logo-text">NFAS</span>
-		</div>
+		<a id="logo" href="#intro" class="nav">
+			<div id="logowrap">
+				<!--img src="" alt="INFAS"-->
+				<span id="logo-text">NFAS</span>
+			</div>
+		</a>
 		<div id="nav-group" class="flex row">
 			<a class="nav" href="#topic"><span>主題</span></a>
 			<a class="nav" href="#about"><span>關於</span></a>
 			<a class="nav" href="#agenda"><span>議程</span></a>
 			<a class="nav" href="#transportation"><span>交通</span></a>
-			<a class="nav" href="#staff"><span>工作人員</span></a>
+			<a class="nav" href="#staff"><span>團隊</span></a>
 			<a class="nav" href="#sponsor"><span>贊助</span></a>
 		</div>
 	</div>
-	<div id="intro" class="page">
-		<div id="intro-wrapper">
-			<div id="intro-logo"><img src="logo.png" alt="INFAS logo"></div>
-			<p id="intro-text">全國中學生資訊年會</p>
-		</div>
+	<div id="intro" class="page flex column center">
+		<div id="intro-logo" class="flex center"><img src="logo.png" alt="INFAS logo"></div>
+		<div id="intro-text">全國中學生資訊年會</div>
 	</div>
 	<div class="section" id="topic">
 		<div class="title">Net the Future</div>
@@ -71,146 +71,108 @@
 		<div class="content">
 			<table><tbody>
 				<tr>
-					<th class="time">TIME</th>
-					<th class="A">A</th>
-					<th class="B">B</th>
-					<th class="S">S</th>
-					<th class="W">W</th>
+					<th class="time"></th>
+					<th class="A">A 廳 / 發表軌</th>
+					<th class="B">B 廳 / 升學教育軌</th>
 				</tr>
 				<tr>
-					<td class="time">09:00 ~ 09:30</td>
-					<td class="A"></td>
-					<td class="B"></td>
-					<td class="S"></td>
-					<td class="W"></td>
+					<th class="time">09:00<br>|<br>09:30</th>
+					<td class="A" colspan="2"><span class="agenda-name">大廳報到</span></td>
 				</tr>
 				<tr>
-					<td class="time">09:45 ~ 10:35</td>
-					<td class="A"></td>
-					<td class="B"></td>
-					<td class="S"></td>
-					<td class="W"></td>
+					<th class="time">09:30<br>|<br>09:40</th>
+					<td class="A" colspan="2"><span class="agenda-name">開幕</span></td>
+					<th class="S">S 交流廳</th>
 				</tr>
 				<tr>
-					<td class="time">10:45 ~ 11:35</td>
-					<td class="A"></td>
-					<td class="B"></td>
-					<td class="S"></td>
-					<td class="W"></td>
+					<th class="time">09:45<br>|<br>10:35</th>
+					<td class="A" colspan="2" data-agenda-id="1">Keynote<br><span class="agenda-name">做個樂於學習、善於創造的資工人</span><br><span class="speaker-name">洪士灝教授</span></td>
+					<td class="S" rowspan="2">休息區</td>
 				</tr>
 				<tr>
-					<td class="time">11:35 ~ 12:35</td>
-					<td class="A"></td>
-					<td class="B"></td>
-					<td class="S"></td>
-					<td class="W"></td>
+					<th class="time">10:45<br>|<br>11:35</th>
+					<td class="A" colspan="2" data-agenda-id="2">Keynote<br><span class="agenda-name">Stay Hungry, Stay Foolish.</span><br><span class="speaker-name">Denny</span></td>
 				</tr>
 				<tr>
-					<td class="time">12:35 ~ 12:50</td>
-					<td class="A"></td>
-					<td class="B"></td>
-					<td class="S"></td>
-					<td class="W"></td>
+					<th class="time">11:35<br>|<br>12:35</th>
+					<td class="A" colspan="2"><span class="agenda-name">OGAR 大賽</span></td>
+					<td class="S"><span class="agenda-name">午餐領取</span></td>
 				</tr>
 				<tr>
-					<td class="time">12:55 ~ 13:10</td>
-					<td class="A"></td>
-					<td class="B"></td>
-					<td class="S"></td>
-					<td class="W"></td>
+					<th class="time">12:35<br>|<br>13:10</th>
+					<td class="A" data-agenda-id="3A"><span class="agenda-name">淺談 Functional Programming</span><br><span class="speaker-name">陳立凡</span></td>
+					<td class="B" data-agenda-id="3B">???</td>
+					<td class="S" rowspan="3">休息區</td>
 				</tr>
 				<tr>
-					<td class="time">13:15 ~ 13:30</td>
-					<td class="A"></td>
-					<td class="B"></td>
-					<td class="S"></td>
-					<td class="W"></td>
+					<th class="time">13:15<br>|<br>13:50</th>
+					<td class="A" data-agenda-id="4A"><span class="agenda-name">淺談帳號安全與加密連線</span><br>楊志璿</span></td>
+					<td class="B" data-agenda-id="4B"><span class="agenda-name">無人機自動飛航現況、應用及挑戰</span><br><span class="speaker-name">陳冠文教授</span></td>
 				</tr>
 				<tr>
-					<td class="time">13:35 ~ 13:50</td>
-					<td class="A"></td>
-					<td class="B"></td>
-					<td class="S"></td>
-					<td class="W"></td>
+					<th class="time">13:55<br>|<br>14:30</th>
+					<td class="A"data-agenda-id="5A"><span class="agenda-name">你不懂設計師：自學前端的心路歷程</span><br><span class="speaker-name">張雅茵</span></td>
+					<td class="B"data-agenda-id="5B">???</td>
 				</tr>
 				<tr>
-					<td class="time">13:55 ~ 14:10</td>
-					<td class="A"></td>
-					<td class="B"></td>
-					<td class="S"></td>
-					<td class="W"></td>
+					<th class="time">14:30<br>|<br>15:10</th>
+					<td class="A" colspan="2"><span class="agenda-name">大廳逛攤位</span></td>
+					<td class="S"><span class="agenda-name">下午茶、<br>交流時間</span></td>
 				</tr>
 				<tr>
-					<td class="time">14:15 ~ 14:30</td>
-					<td class="A"></td>
-					<td class="B"></td>
-					<td class="S"></td>
-					<td class="W"></td>
+					<th class="time">15:10<br>|<br>15:25</th>
+					<td class="A" data-agenda-id="6A"><span class="agenda-name">第一次深度學習就上手</span><br><span class="speaker-name">張聖岳</td>
+					<td class="B" rowspan="3" data-agenda-id="6B"><span class="agenda-name">讀心術 - 以電腦來解碼腦部活動</span><br><span class="speaker-name">陳永昇教授</span></td>
+					<td class="S" rowspan="5">休息區<br>&amp;<br><span class="agenda-name">Ruby on Rails<br>工作坊</span><br>(電腦教室)</td>
 				</tr>
 				<tr>
-					<td class="time">14:30 ~ 15:10</td>
-					<td class="A"></td>
-					<td class="B"></td>
-					<td class="S"></td>
-					<td class="W"></td>
+					<th class="time">15:30<br>|<br>15:45</th>
+					<td class="A" data-agenda-id="7A"><span class="agenda-name">SysAdmin - 如何當個稱職的工具人</span><br><span class="speaker-name">賴大立</span></td>
 				</tr>
 				<tr>
-					<td class="time">15:10 ~ 15:25</td>
-					<td class="A"></td>
-					<td class="B"></td>
-					<td class="S"></td>
-					<td class="W"></td>
+					<th class="time">15:50<br>|<br>16:05</th>
+					<td class="A" data-agenda-id="8A"><span class="agenda-name">Facebook 真的免費嗎？</span><br><span class="speaker-name">陳冠辰</span></td>
 				</tr>
 				<tr>
-					<td class="time">15:30 ~ 15:45</td>
-					<td class="A"></td>
-					<td class="B"></td>
-					<td class="S"></td>
-					<td class="W"></td>
+					<th class="time">16:10<br>|<br>16:25</th>
+					<td class="A" rowspan="2" data-agenda-id="9A"><span class="agenda-name">跨校專題 &amp; 社群合作</span><br><span class="speaker-name">劉元愷、許捷宜</span></td>
+					<td class="B" data-agenda-id="9B"><span class="agenda-name">高中三年的資研生活</span><br><span class="speaker-name">陳宇漢</span></td>
 				</tr>
 				<tr>
-					<td class="time">15:50 ~ 16:45</td>
-					<td class="A"></td>
-					<td class="B"></td>
-					<td class="S"></td>
-					<td class="W"></td>
+					<th class="time">16:30<br>|<br>16:45</th>
+					<td class="B" data-agenda-id="10B"><span class="agenda-name">如何培養創意與想法？</span><br><span class="speaker-name">洪裕翔</span></td>
 				</tr>
 				<tr>
-					<td class="time">16:10 ~ 16:25</td>
-					<td class="A"></td>
-					<td class="B"></td>
-					<td class="S"></td>
-					<td class="W"></td>
+					<th class="time">16:50<br>|<br>17:05</th>
+					<td class="A" data-agenda-id="11A"><span class="agenda-name">像電神一樣使用編輯器 — 淺談 Emacs</span><br><span class="speaker-name">劉宗函</span></td>
+					<td class="B" data-agenda-id="11B"><span class="agenda-name">我與我奇幻的程式競賽之路</span></span><br><span class="speaker-name">蘇柏瑄</span></td>
 				</tr>
 				<tr>
-					<td class="time">16:30 ~ 16:45</td>
-					<td class="A"></td>
-					<td class="B"></td>
-					<td class="S"></td>
-					<td class="W"></td>
-				</tr>
-				<tr>
-					<td class="time">16:50 ~ 17:05</td>
-					<td class="A"></td>
-					<td class="B"></td>
-					<td class="S"></td>
-					<td class="W"></td>
-				</tr>
-				<tr>
-					<td class="time">17:15 ~ 17:30</td>
-					<td class="A"></td>
-					<td class="B"></td>
-					<td class="S"></td>
-					<td class="W"></td>
+					<th class="time">17:15<br>|<br>17:30</th>
+					<td class="A" colspan="2"><span class="agenda-name">閉幕</span></td>
 				</tr>
 			</tbody></table>
+			<div id="agenda-content" class="flex column"><div class="padding"></div><div class="wrap flex row s-column">
+				<div id="agenda-exit" class="flex center"><span>&times;</span></div>
+				<div id="agenda-info">
+					<div id="agenda-title"></div>
+					<div id="agenda-time"></div>
+					<div id="agenda-description"><p></p></div>
+				</div>
+				<div id="agenda-speaker">
+					<div id="agenda-headpic"><img src="" alt="" id="agenda-headpic-img"></div>
+					<div id="agenda-name"></div>
+					<div id="agenda-speakerinfo"><p></p></div>
+				</div>
+			</div><div class="padding"></div></div>
 		</div>
 	</div>
 	<div class="section" id="transportation">
 		<div class="title">交通方式</div>
 		<div class="content">
 			<!-- Google Maps -->
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1135.9736042490806!2d120.99751974210994!3d24.786967169118263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468360f95ae32a7%3A0xdc6638191f31d7a9!2z5Lqk6YCa5aSn5a245bel56iL5LiJ6aSo!5e0!3m2!1szh-TW!2stw!4v1527262461325" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1135.9736042490806!2d120.99751974210994!3d24.786967169118263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468360f95ae32a7%3A0xdc6638191f31d7a9!2z5Lqk6YCa5aSn5a245bel56iL5LiJ6aSo!5e0!3m2!1szh-TW!2stw!4v1527262461325" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<p style="text-align:center">到達<a href="http://www.nctu.edu.tw/howgo-nctu" target="_blank">交大北大門</a>後沿著大學路直走，工程三館會在您的左手邊，小木屋松餅的正對面。<br />報到期間從客運站至會場路上將有工作人員在路上指引方向。</p>
 		</div>
 	</div>
 	<div class="section" id="staff">
@@ -346,19 +308,19 @@
 	</div>
 	<div class="section" id="sponsor">
 		<div class="title">贊助</div>
-		<div class="content">
-			<table>
-				<tr>
-					<td class="sponsor-photo"><img src="nctu-csie.png" alt=""></td>
-					<td class="sponsor-photo"><img src="5xruby.png" alt=""></td>
-					<td class="sponsor-photo"><img src="Aapato.png" alt=""></td>
-				</tr>
-				<tr>
-					<td class="sponsor-name">國立交通大學<br />資訊工程學系</td>
-					<td class="sponsor-name">五倍紅寶石</td>
-					<td class="sponsor-name">卓爾榮譽學會</td>
-				</tr>
-			</table>
+		<div class="content flex row s-column center">
+			<div class="sponsor-card">
+				<div class="sponsor-photo"><img src="nctu-csie.png" alt=""></div>
+				<div class="sponsor-name">國立交通大學<br>資訊工程學系</div>
+			</div>
+			<div class="sponsor-card">
+				<div class="sponsor-photo"><img src="5xruby.png" alt=""></div>
+				<div class="sponsor-name">五倍紅寶石</div>
+			</div>
+			<div class="sponsor-card">
+				<div class="sponsor-photo"><img src="Aapato.png" alt=""></div>
+				<div class="sponsor-name">卓爾榮譽學會</div>
+			</div>
 		</div>
 	</div>
 	<script src="index.js"></script>
