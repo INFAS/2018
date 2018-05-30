@@ -291,6 +291,8 @@ a:hover {
 	text-align: center;
 	width: 100px;
 	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
 }
 
 #staff .staff-photo>img {
