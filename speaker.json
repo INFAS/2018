@@ -21,11 +21,11 @@
 		"speakerintro": "快要被當的高一科學班學生 <br /> 現為師大附中網管小組成員 <br /> JS 寫著寫著就不小心掉進了 FP 的坑裡"
 	},
 	"3B": {
-		"title": "",
-		"intro": "",
-		"time": "",
-		"speaker": "",
-		"speakerintro": ""
+		"title": "深度學習的淺見 - 數學不難但很重要",
+		"intro": "深度學習是騙人的 ☺<br />數學其實很簡單。在這個演講中，我將以幾個近年做過的研究為引子，從實例中觀察數學基本素養在各位未能的資訊學習生涯中所扮演的角色。",
+		"time": "B廳 / 升學教育軌 / 12:35 ~ 13:10",
+		"speaker": "易志偉",
+		"speakerintro": "Dr. Chih-Wei Yi received his Ph.D. degree in Computer Science from the Illinois Institute of Technology in 2005, and B.S. degree in Mathematics and M.S. degrees in Computer Science and Information Engineering from the National Taiwan University in 1991 and 1993, respectively. He is currently a Professor with the Department of Computer Science and the Director of the Institute of Network Engineering, National Chiao Tung University. He is a member of the IEEE. "
 	},
 	"4A": {
 		"title": "淺談帳號安全與加密連線",
@@ -49,11 +49,11 @@
 		"speakerintro": "台科大設計系畢業生，五倍紅寶石前端設計師，職業貓奴。自學網頁至今四年，有兩年前端設計與開發的工作經驗。"
 	},
 	"5B": {
-		"title": "",
-		"intro": "",
-		"time": "",
-		"speaker": "",
-		"speakerintro": ""
+		"title": "Big data analysis for urban computing",
+		"intro": "本演講將以人潮數據分析為例, 深入簡出的分析如何運用一些資料探勘的方式, 判斷人潮在城市中的移動與可能的運輸載具分析。",
+		"time": "B廳 / 升學教育軌 / 13:55 ~ 14:30",
+		"speaker": "彭文志",
+		"speakerintro": "Wen-Chih Peng received the BS and MS degrees from the National Chiao Tung University, Taiwan, in 1995 and 1997, respectively, and the Ph.D. degree in Electrical Engineering from the National Taiwan University, Taiwan, R.O.C in 2001. Currently, he is a professor at the department of Computer Science, National Chiao Tung University, Taiwan."
 	},
 	"6A": {
 		"title": "第一次深度學習就上手",
